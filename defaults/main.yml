@@ -21,3 +21,13 @@ oh_my_zsh_update_mode: disabled
 # than "disabled", this is the frequency (in days) to check for a new version.
 # The value 0 will check every time a new shell session starts.
 oh_my_zsh_update_frequency: 13
+
+# Change the following variable if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+history_timestamps_format: "yyyy-mm-dd"
+
+
