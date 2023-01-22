@@ -89,8 +89,9 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 exports=({{ oh_my_zsh.exports | default(exports) }})
-exports=( "${exports[@]}/#/export " )
-{{ printf '%s\n' "${exports[@]}" }}
+export "${exports[@]}"
+# exports=( "${exports[@]}/#/export " )
+# printf '%s\n' "${exports[@]}"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
