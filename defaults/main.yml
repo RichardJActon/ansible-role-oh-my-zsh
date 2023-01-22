@@ -28,6 +28,6 @@ oh_my_zsh_update_frequency: 13
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-history_timestamps_format: "yyyy-mm-dd"
+history_timestamps_format: "mm/dd/yyyy"
 
 
