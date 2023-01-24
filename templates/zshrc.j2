@@ -94,7 +94,7 @@ export "${exports[@]}"
 aliases=({{ oh_my_zsh.aliases | default(aliases) | join(' ') }})
 alias "${aliases[@]}"
 
-cmds=({{ oh_my_zsh.cmds | default(cmds) | join('; ') | map('to_json') }})
+cmds=({{ oh_my_zsh.cmds | default(cmds) | map('regex_replace', '(.*)', \"'\\1'\;\") | join(' ') }})
 eval "${cmds[@]}"
 
 # You may need to manually set your language environment
